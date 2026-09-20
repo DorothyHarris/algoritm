@@ -1,0 +1,11 @@
+{
+  "name": "algoritm",
+  "private": true,
+  "description": "Учебные задачи по алгоритмам",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
