@@ -17,10 +17,10 @@ topics/<тема>/<ник>/<номер>-<задача>/
 Например:
 
 ```
-topics/arrays/dorothyharris/1-two-sum/README.md
-topics/arrays/dorothyharris/1-two-sum/CHANGELOG.md
-topics/arrays/dorothyharris/1-two-sum/js/solution.js
-topics/arrays/dorothyharris/1-two-sum/js/solution.test.js
+topics/arrays-strings/dorothyharris/1-two-sum/README.md
+topics/arrays-strings/dorothyharris/1-two-sum/CHANGELOG.md
+topics/arrays-strings/dorothyharris/1-two-sum/js/solution.js
+topics/arrays-strings/dorothyharris/1-two-sum/js/solution.test.js
 topics/strings/dorothyharris/1-valid-anagram/py/solution.py
 ```
 
@@ -29,7 +29,7 @@ topics/strings/dorothyharris/1-valid-anagram/py/solution.py
 ## Как называть
 
 - **`<ник>`** — ваш GitHub username в нижнем регистре: `dorothyharris`.
-- **`<тема>`** — `kebab-case`, обычно во множественном числе. Уже есть: `arrays`, `strings`, `hash-maps`, `linked-lists`, `stacks-queues`, `trees`, `graphs`, `sorting`, `searching`, `recursion`, `dynamic-programming`, `greedy`, `math`. Нужна новая — просто создайте папку.
+- **`<тема>`** — `kebab-case`, обычно во множественном числе. Уже есть: `arrays-strings`, `strings`, `hash-maps`, `linked-lists`, `stacks-queues`, `trees`, `graphs`, `sorting`, `searching`, `recursion`, `dynamic-programming`, `greedy`, `math`. Нужна новая — просто создайте папку.
 - **`<номер>-<задача>`** — `1-two-sum`. Номер ваш личный: первая задача в теме — `1`, вторая — `2` и так далее, номера не переиспользуются. Название английское, `kebab-case`. Чужие решения той же задачи ищите по названию: `topics/*/*/*-two-sum`.
 - **`<язык>`** — короткий код, новый язык добавляется просто новой папкой:
 
@@ -45,7 +45,7 @@ topics/strings/dorothyharris/1-valid-anagram/py/solution.py
 
 ## README и CHANGELOG задачи
 
-`README.md`: название, ссылка на источник, сложность, статус, условие, примеры и ваши заметки (идея, сложность по времени и памяти). Образец: [Two Sum](topics/arrays/dorothyharris/1-two-sum/README.md).
+`README.md`: название, ссылка на источник, сложность, статус, условие, примеры и ваши заметки (идея, сложность по времени и памяти). Образец: [Two Sum](topics/arrays-strings/dorothyharris/1-two-sum/README.md).
 
 `CHANGELOG.md`: записи от новых к старым, у каждой дата. Пишем, что сделано и что было непонятно или не получилось:
 
@@ -63,12 +63,12 @@ topics/strings/dorothyharris/1-valid-anagram/py/solution.py
 - Для JS и TS пишем тесты на **Jest**, файл лежит рядом с решением.
 - Писать тесты самим не обязательно: можно попросить Claude, например «напиши тесты на Jest для 2-valid-anagram». Лучше сначала заполнить условие и примеры в README задачи.
 - Хорошо, если тесты покрывают примеры из условия и крайние случаи: пустой ввод, один элемент, отрицательные числа, дубликаты.
-- Один раз выполнить `npm install`, дальше из корня: `npm test` (все тесты) или `npx jest topics/arrays/<ник>/1-two-sum` (одна задача).
+- Один раз выполнить `npm install`, дальше из корня: `npm test` (все тесты) или `npx jest topics/arrays-strings/<ник>/1-two-sum` (одна задача).
 - Для TypeScript при первом использовании понадобится `ts-jest`, попросите Claude настроить.
 
 ## Git
 
-- Ветка: `<ник>/<тема>/<задача>`, например `dorothyharris/arrays/two-sum`. Общие изменения (README, `package.json`) делаем в ветке `chore/...`.
+- Ветка: `<ник>/<тема>/<задача>`, например `dorothyharris/arrays-strings/two-sum`. Общие изменения (README, `package.json`) делаем в ветке `chore/...`.
 - В коммитах трогаем только свою папку `<ник>`.
 - Перед началом работы: `git pull --rebase origin develop`, готовое — PR в `develop`.
 
